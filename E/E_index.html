@@ -90,7 +90,8 @@
 				$("#fecha").datepicker();
 				});
 				</script>
-				Fecha: <input type="text" id="fecha" value="" /> <br><br>
+				Fecha: <input type="text" id="fecha" value="" /> <tr> Turno <input type="text" id="turno" value="" /> </tr><br><br>
+				Tipo de paciente <input type="text" id="paciente" value="" /> <br><br>
 				Cama: <input type="text"/> <br> <br>
 				
 	<!-- Tabla de información -->
@@ -98,10 +99,10 @@
 		<table>
 		<thead><tr><th>Datos del paciente</th><th>Estado Hemodinamico</th><th>Estado neurologico</th><th>Ventiación/Oxígeno</th><th></th></tr></thead>
 		<tfoot><tr><td colspan="4"><div id="paging"><ul><li><a href="#"><span>Anterior</span></a></li><li><a href="#" class="active"><span>1</span></a></li><li><a href="#"><span>2</span></a></li><li><a href="#"><span>3</span></a></li><li><a href="#"><span>4</span></a></li><li><a href="#"><span>5</span></a></li><li><a href="#"><span>Siguiente</span></a></li></ul></div></tr></tfoot>
-		<tbody><tr><td>NOMBRE <input type="text"/></td><td>TA<input type="text"/> <input type="text"/></td><td>GLASGOW<input type="text"/></td><td>VM<input type="text"/></td></tr>
-		<tr class="alt"><td>EDAD <input type="text"/></td><td>PAM<input type="text"/></td><td>RASS<input type="text"/></td><td>MV<input type="text"/></td></tr>
-		<tr><td>SEXO <input type="tex"/></td><td>FC<input type="text"/></td><td>RAMSAY<input type="text"/></td><td>FiO2%<input type="text"/></td></tr>
-		<tr class="alt"><td>DIAGNÓSTICO <input type="text"/></td><td>SO2<input type="text"/></td><td>BRADEN<input type="text"/></td><td>SO2<input type="text"/></td></tr>
+		<tbody><tr><td>NOMBRE <input type="text"/></td><td>TA <input type="text" size="2"/> <input type="text" size="2"/></td><td>GLASGOW<input type="text"/></td><td>VM<input type="text"/></td></tr>
+		<tr class="alt"><td>EDAD <input type="text"/></td><td>PAM <input type="text" size="2"/></td><td>RASS<input type="text"/></td><td>MV<input type="text"/></td></tr>
+		<tr><td>SEXO <input type="tex"/></td><td>FC <input type="text" size="2"/></td><td>RAMSAY<input type="text"/></td><td>FiO2%<input type="text"/></td></tr>
+		<tr class="alt"><td>DIAGNÓSTICO <input type="text"/></td><td>SO2 <input type="text"size="2"/></td><td>BRADEN<input type="text"/></td><td>SO2<input type="text"/></td></tr>
 		<tr><td>L. REFERENCIA <input type="text"/></td><td>FR<input type="text"/></td><td>CRICHTON<input type="text"/></td><td>ANTIBIOTICOS<input type="text"/><input type="text"/></td><td>DÍAS<input type="text"/><input type="text"/></td><</tr>
 		<tr class="alt"><td>FECHA DE INGRESO<input type="text"/></td><td>TEM<input type="text"/></td><td>TISS<input type="text"/></td><td>data</td></tr>
 		<tr><td>DÍA DEL EVENTO<input type="text"/></td><td>PVC<input type="text"/></td><td>CLASE<input type="text"/></td><td>data</td></tr>

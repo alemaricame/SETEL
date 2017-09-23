@@ -95,20 +95,61 @@
 				Cama: <input type="text"/> <br> <br>
 				
 	<!-- Tabla de información -->
-		<div class="datagrid">
+		<div class="datagrid" style="overflow-x:auto;">
 		<table>
-		<thead><tr><th>Datos del paciente</th><th>Estado Hemodinamico</th><th>Estado neurologico</th><th>Ventiación/Oxígeno</th><th></th></tr></thead>
-		<tfoot><tr><td colspan="4"><div id="paging"><ul><li><a href="#"><span>Anterior</span></a></li><li><a href="#" class="active"><span>1</span></a></li><li><a href="#"><span>2</span></a></li><li><a href="#"><span>3</span></a></li><li><a href="#"><span>4</span></a></li><li><a href="#"><span>5</span></a></li><li><a href="#"><span>Siguiente</span></a></li></ul></div></tr></tfoot>
-		<tbody><tr><td>NOMBRE <input type="text"/></td><td>TA <input type="text" size="2"/> <input type="text" size="2"/></td><td>GLASGOW<input type="text"/></td><td>VM<input type="text"/></td></tr>
-		<tr class="alt"><td>EDAD <input type="text"/></td><td>PAM <input type="text" size="2"/></td><td>RASS<input type="text"/></td><td>MV<input type="text"/></td></tr>
-		<tr><td>SEXO <input type="tex"/></td><td>FC <input type="text" size="2"/></td><td>RAMSAY<input type="text"/></td><td>FiO2%<input type="text"/></td></tr>
-		<tr class="alt"><td>DIAGNÓSTICO <input type="text"/></td><td>SO2 <input type="text"size="2"/></td><td>BRADEN<input type="text"/></td><td>SO2<input type="text"/></td></tr>
-		<tr><td>L. REFERENCIA <input type="text"/></td><td>FR<input type="text"/></td><td>CRICHTON<input type="text"/></td><td>ANTIBIOTICOS<input type="text"/><input type="text"/></td><td>DÍAS<input type="text"/><input type="text"/></td><</tr>
-		<tr class="alt"><td>FECHA DE INGRESO<input type="text"/></td><td>TEM<input type="text"/></td><td>TISS<input type="text"/></td><td>data</td></tr>
-		<tr><td>DÍA DEL EVENTO<input type="text"/></td><td>PVC<input type="text"/></td><td>CLASE<input type="text"/></td><td>data</td></tr>
-		<tr class="alt"><td>FECHA DE NACIMIENTO<input type="text" id="fecha" value=""/></td><td>UI<input type="text"/></td><td><strong>Estado metabólico</strong></td><td>data</td></tr>
-		<tr><td>NO. EXPEDIENCTE<input type="text"/></td><td>DX<input type="text"/></td><td>DIETA<input type="text"/></td><td>data</td></tr>
-		<tr class="alt"><td>NO. SPP<input type="text" /></td><td>PIA<input type="text"/></td><td>AYUNO<input type="text"/></td><td>data</td></tr
+		<thead><tr><th>DATOS DEL PACIENTE</th><th>ESTADO HEMODINAMICO</th><th>ESTADO NEUROLÓGICO</th><th>VENTILACIÓN/OXÍGENO</th><th>LÍQUIDOS PARENTALES</th><th>LAB</th><th>RX</th><th>HEMODERIVADOS</th><th>OBSERVACIONES</th></tr></thead>
+		<tfoot><tr><td colspan="12"><div id="paging"><ul><li><a href="#"><span>Anterior</span></a></li><li><a href="#" class="active"><span>1</span></a></li><li><a href="#"><span>2</span></a></li><li><a href="#"><span>3</span></a></li><li><a href="#"><span>4</span></a></li><li><a href="#"><span>5</span></a></li><li><a href="#"><span>Siguiente</span></a></li></ul></div></tr></tfoot>
+		<tbody><tr><td>NOMBRE <input type="text"/></td><td>TA<input type="text" size="1"/> <input type="text" size="1px"/></td><td>GLASGOW <input type="text"size="2"/></td><td>VM <input type="text"size="4"/></td><td>ANTIB<input type="text"size="6"/></td><td>BH <input type="checkbox" name="lab" value="0"/></td><td><input type="checkbox" name="lab" value="0"/></td><td><input type="text"size="10"/></td><td><input type="text"size="13"/></td></tr>
+		<tr class="alt"><td>EDAD <input type="text"/></td><td>PAM <input type="text" size="2"/></td><td>RASS <input type="text"size="2"/></td><td>MV <input type="text"size="4"/></td><td>LSPS<input type="text" size="6"/></td><td>QS <input type="checkbox" name="lab" value="0"/></td></tr>
+		<tr><td>SEXO <input type="tex"/></td><td>FC <input type="text" size="2"/></td><td>RAMSAY <input type="text"size="2"/></td><td>FiO2% <input type="text"size="4"/></td><td>AMINAS<input type="text" size="6"/></td><td>ELTS <input type="checkbox" name="lab" value="0"/></td></tr>
+		<tr class="alt"><td>DIAGNÓSTICO <input type="text"/></td><td>SO2 <input type="text"size="2"/></td><td>BRADEN <input type="text"size="2"/></td><td>SO2 <input type="text"size="4"/></td><td>SEDACION<input type="text" size="6"/></td><td>TP <input type="checkbox" name="lab" value="0"/></td></tr>
+		<tr><td>L. REFERENCIA <input type="text"/></td><td>FR <input type="text"size="2"/></td><td>CRICHTON <input type="text"size="2"/></td>
+		<!-- Tabla antibióticos -->
+		<td>
+		<table>
+		<tr><th>ANTIBIÓTICOS</th><th>  DÍAS</th></tr>
+		</table>
+		<td></td><td>TPT<input type="checkbox" name="lab" value="0"/></td>
+		</td></tr>
+		<tr class="alt"><td>FECHA DE INGRESO <input type="text"/></td><td>TEM <input type="text"size="2"/></td><td>TISS <input type="text"size="2"/></td><td>
+		<table>
+		<tbody>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
+		</tbody>
+		</table>
+		<td></td><td>CPK<input type="checkbox" name="lab" value="0"/></td>
+		</td></tr>
+		<tr><td>DÍA DEL EVENTO <input type="text"/></td><td>PVC <input type="text"size="2"/></td><td>CLASE <input type="text"size="2"/></td><td>
+		<table>
+		<tbody>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
+		</tbody>
+		</table>
+		<td></td><td>EGO<input type="checkbox" name="lab" value="0"/></td>
+		</td></tr>
+		<tr class="alt"><td>FECHA DE NACIMIENTO <input type="text" id="fecha" value=""/></td><td>UI <input type="text"size="2"/></td><td><strong>Estado metabólico</strong></td><td>
+		<table>
+		<tbody>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
+		</tbody>
+		</table>
+		<td></td><td>CULTI<input type="checkbox" name="lab" value="0"/></td>
+		</td></tr>
+		<tr><td>NO. EXPEDIENCTE <input type="text"/></td><td>DX <input type="text"size="2"/></td><td>DIETA <input type="text"/></td><td>
+		<table>
+		<tbody>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
+		</tbody>
+		</table>
+		<td></td><td>OTRO<input type="checkbox" name="lab" value="0"/></td>
+		</td></tr>
+		<tr class="alt"><td>NO. SPP <input type="text" /></td><td>PIA <input type="text"size="2"/></td><td>AYUNO <input type="text"/></td><td>
+		<table>
+		<tbody>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
+		</tbody>
+		</table>
+		</td></tr>
 		</tbody>
 		</table>
 		</div>

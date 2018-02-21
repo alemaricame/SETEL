@@ -14,8 +14,6 @@
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css' />
 	<!-- Tabla -->
 	<link href="assets/css/datagrid.css" rel="stylesheet"/>
-	<!--enter-->
-	
 </head>
 <!-- Barra  -->
 <body>
@@ -101,54 +99,54 @@
 		<table>
 		<thead><tr><th>DATOS DEL PACIENTE</th><th>ESTADO HEMODINAMICO</th><th>ESTADO NEUROLÓGICO</th><th>VENTILACIÓN/OXÍGENO</th><th>LÍQUIDOS PARENTALES</th><th>LAB</th><th>RX</th><th>HEMODERIVADOS</th><th>OBSERVACIONES</th></tr></thead>
 		<tfoot><tr><td colspan="12"><div id="paging"><ul><li><a href="#"><span>Anterior</span></a></li><li><a href="#" class="active"><span>1</span></a></li><li><a href="#"><span>2</span></a></li><li><a href="#"><span>3</span></a></li><li><a href="#"><span>4</span></a></li><li><a href="#"><span>5</span></a></li><li><a href="#"><span>Siguiente</span></a></li></ul></div></tr></tfoot>
-		<tbody><tr><td>NOMBRE <input type="text"id="nombre"onkeyup="saltar(event,'edad')"/></td><td>TA<input type="text" size="1"id="ta1"onkeyup="saltar(event,'ta2')"/> <input type="text" size="1px"id="ta2"onkeyup="saltar(event,'pam')"/></td><td>GLASGOW <input type="text"size="2"id="glasgow"onkeyup="saltar(event,'rass')"/></td><td>VM <input type="text"size="4"id="vm"onkeyup="saltar(event,'mv')"/></td><td>ANTIB<input type="text"size="6"id="antib"onkeyup="saltar(event,'lsps')"/></td><td>BH <input type="checkbox" name="lab" value="0"id="bh"onkeyup="saltar(event,'qs')"/></td><td><input type="checkbox" name="lab" value="0"id="rx"onkeyup="saltar(event,'pg')"/></td><td><input type="text"size="10"/></td><td><input type="text"size="13"/></td></tr>
-		<tr class="alt"><td>EDAD <input type="text"id="edad"onkeyup="saltar(event,'sexo')"/></td><td>PAM <input type="text" size="2"id="pam"onkeyup="saltar(event,'fc')"/></td><td>RASS <input type="text"size="2"id="rass"onkeyup="saltar(event,'ramsay')"/></td><td>MV <input type="text"size="4"id="mv"onkeyup="saltar(event,'fio2')"/></td><td>LSPS<input type="text" size="6"id="lsps"onkeyup="saltar(event,'aminas')"/></td><td>QS <input type="checkbox" name="lab" value="0"id="qs"onkeyup="saltar(event,'elts')"/></td></tr>
-		<tr><td>SEXO <input type="tex"id="sexo"onkeyup="saltar(event,'diagnostico')"/></td><td>FC <input type="text" size="2"id="fc"onkeyup="saltar(event,'so2')"/></td><td>RAMSAY <input type="text"size="2"id="ramsay"onkeyup="saltar(event,'braden')"/></td><td>FiO2% <input type="text"size="4"id="fio2"onkeyup="saltar(event,'so2vo')"/></td><td>AMINAS<input type="text" size="6"id="aminas"onkeyup="saltar(event,'sedacion')"/></td><td>ELTS <input type="checkbox" name="lab" value="0"id="elts"onkeyup="saltar(event,'tp')"/></td></tr>
-		<tr class="alt"><td>DIAGNÓSTICO <input type="text"id="diagnostico"onkeyup="saltar(event,'lreferencia')"/></td><td>SO2 <input type="text"size="2"id="so2"onkeyup="saltar(event,'fr')"/></td><td>BRADEN <input type="text"size="2"id="braden"onkeyup="saltar(event,'crichton')"/></td><td>SO2 <input type="text"size="4"id="so2vo"onkeyup="saltar(event,'antb1')"/></td><td>SEDACION<input type="text" size="6"id="sedacion"onkeyup="saltar(event,'bh')"/></td><td>TP <input type="checkbox" name="lab" value="0"id="tp"onkeyup="saltar(event,'tpt')"/></td></tr>
-		<tr><td>L. REFERENCIA <input type="text"id="lreferencia"onkeyup="saltar(event,'ingreso')"/></td><td>FR <input type="text"size="2"id="fr"onkeyup="saltar(event,'tem')"/></td><td>CRICHTON <input type="text"size="2"id="crichton"onkeyup="saltar(event,'tiss')"/></td>
+		<tbody><tr><td>NOMBRE <input type="text"/></td><td>TA<input type="text" size="1"/> <input type="text" size="1px"/></td><td>GLASGOW <input type="text"size="2"/></td><td>VM <input type="text"size="4"/></td><td>ANTIB<input type="text"size="6"/></td><td>BH <input type="checkbox" name="lab" value="0"/></td><td><input type="checkbox" name="lab" value="0"/></td><td><input type="text"size="10"/></td><td><input type="text"size="13"/></td></tr>
+		<tr class="alt"><td>EDAD <input type="text"/></td><td>PAM <input type="text" size="2"/></td><td>RASS <input type="text"size="2"/></td><td>MV <input type="text"size="4"/></td><td>LSPS<input type="text" size="6"/></td><td>QS <input type="checkbox" name="lab" value="0"/></td></tr>
+		<tr><td>SEXO <input type="tex"/></td><td>FC <input type="text" size="2"/></td><td>RAMSAY <input type="text"size="2"/></td><td>FiO2% <input type="text"size="4"/></td><td>AMINAS<input type="text" size="6"/></td><td>ELTS <input type="checkbox" name="lab" value="0"/></td></tr>
+		<tr class="alt"><td>DIAGNÓSTICO <input type="text"/></td><td>SO2 <input type="text"size="2"/></td><td>BRADEN <input type="text"size="2"/></td><td>SO2 <input type="text"size="4"/></td><td>SEDACION<input type="text" size="6"/></td><td>TP <input type="checkbox" name="lab" value="0"/></td></tr>
+		<tr><td>L. REFERENCIA <input type="text"/></td><td>FR <input type="text"size="2"/></td><td>CRICHTON <input type="text"size="2"/></td>
 		<!-- Tabla antibióticos -->
 		<td>
 		<table>
 		<tr><th>ANTIBIÓTICOS</th><th>  DÍAS</th></tr>
 		</table>
-		<td></td><td>TPT<input type="checkbox" name="lab" value="0"id="tpt"onkeyup="saltar(event,'cpk')"/></td>
+		<td></td><td>TPT<input type="checkbox" name="lab" value="0"/></td>
 		</td></tr>
-		<tr class="alt"><td>FECHA DE INGRESO <input type="text"id="ingreso"onkeyup="saltar(event,'evento')"/></td><td>TEM <input type="text"size="2"id="tem"onkeyup="saltar(event,'pvc')"/></td><td>TISS <input type="text"size="2"id="tiss"onkeyup="saltar(event,'clase')"/></td><td>
+		<tr class="alt"><td>FECHA DE INGRESO <input type="text"/></td><td>TEM <input type="text"size="2"/></td><td>TISS <input type="text"size="2"/></td><td>
 		<table>
 		<tbody>
-		<tr><td> <input type="text"size="10"id="antb1"onkeyup="saltar(event,'dia1')"/></td><td><input type="text" size="1"id="dia1"onkeyup="saltar(event,'antb2')"/></td></tr>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
 		</tbody>
 		</table>
-		<td></td><td>CPK<input type="checkbox" name="lab" value="0"id="cpk"onkeyup="saltar(event,'ego')"/></td>
+		<td></td><td>CPK<input type="checkbox" name="lab" value="0"/></td>
 		</td></tr>
-		<tr><td>DÍA DEL EVENTO <input type="text"id="evento"onkeyup="saltar(event,'fnacimiento')"/></td><td>PVC <input type="text"size="2"id="pvc"onkeyup="saltar(event,'iu')"/></td><td>CLASE <input type="text"size="2"id="clase"onkeyup="saltar(event,'dieta')"/></td><td>
+		<tr><td>DÍA DEL EVENTO <input type="text"/></td><td>PVC <input type="text"size="2"/></td><td>CLASE <input type="text"size="2"/></td><td>
 		<table>
 		<tbody>
-		<tr><td> <input type="text"size="10"id="antb2"onkeyup="saltar(event,'dia2')"/></td><td><input type="text" size="1"id="dia2"onkeyup="saltar(event,'antb3')"/></td></tr>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
 		</tbody>
 		</table>
-		<td></td><td>EGO<input type="checkbox" name="lab" value="0"id="ego"onkeyup="saltar(event,'culti')"/></td>
+		<td></td><td>EGO<input type="checkbox" name="lab" value="0"/></td>
 		</td></tr>
-		<tr class="alt"><td>FECHA DE NACIMIENTO <input type="text" id="fnacimiento"onkeyup="saltar(event,'noexpediente')"/></td><td>UI <input type="text"size="2"id="iu"onkeyup="saltar(event,'dx')"/></td><td><strong>Estado metabólico</strong></td><td>
+		<tr class="alt"><td>FECHA DE NACIMIENTO <input type="text" id="fecha" value=""/></td><td>UI <input type="text"size="2"/></td><td><strong>Estado metabólico</strong></td><td>
 		<table>
 		<tbody>
-		<tr><td> <input type="text"size="10"id="antb3"onkeyup="saltar(event,'dia3')"/></td><td><input type="text" size="1"id="dia3"onkeyup="saltar(event,'antb4')"/></td></tr>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
 		</tbody>
 		</table>
-		<td></td><td>CULTI<input type="checkbox" name="lab" value="0"id="culti"onkeyup="saltar(event,'otro')"/></td>
+		<td></td><td>CULTI<input type="checkbox" name="lab" value="0"/></td>
 		</td></tr>
-		<tr><td>NO. EXPEDIENCTE <input type="text"id="noexpediente"onkeyup="saltar(event,'nospp')"/></td><td>DX <input type="text"size="2"id="dx"onkeyup="saltar(event,'pia')"/></td><td>DIETA <input type="text"id="dieta"onkeyup="saltar(event,'ayuno')"/></td><td>
+		<tr><td>NO. EXPEDIENCTE <input type="text"/></td><td>DX <input type="text"size="2"/></td><td>DIETA <input type="text"/></td><td>
 		<table>
 		<tbody>
-		<tr><td> <input type="text"size="10"id="antb4"onkeyup="saltar(event,'dia4')"/></td><td><input type="text" size="1"id="dia4"onkeyup="saltar(event,'antb5')"/></td></tr>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
 		</tbody>
 		</table>
-		<td></td><td>OTRO<input type="checkbox" name="lab" value="0"id="otro"onkeyup="saltar(event,'rx')"/></td>
+		<td></td><td>OTRO<input type="checkbox" name="lab" value="0"/></td>
 		</td></tr>
-		<tr class="alt"><td>NO. SPP <input type="text"id="nospp"onkeyup="saltar(event,'ta1')"/></td><td>PIA <input type="text"size="2"id="pia"onkeyup="saltar(event,'glasgow')"/></td><td>AYUNO <input type="text"id="ayuno"onkeyup="saltar(event,'vm')"/></td><td>
+		<tr class="alt"><td>NO. SPP <input type="text" /></td><td>PIA <input type="text"size="2"/></td><td>AYUNO <input type="text"/></td><td>
 		<table>
 		<tbody>
-		<tr><td> <input type="text"size="10"id="antb5"onkeyup="saltar(event,'dia5')"/></td><td><input type="text" size="1"id="dia5"onkeyup="saltar(event,'antib')"/></td></tr>
+		<tr><td> <input type="text"size="10"/></td><td><input type="text" size="1"/></td></tr>
 		</tbody>
 		</table>
 		</td></tr>
@@ -162,26 +160,3 @@
 </div>
 </body>
 </html>
-<script>
-// Funcion que se ejecuta cada vez que se pulsa una tecla en cualquier input
-// Tiene que recibir el "event" (evento generado) y el siguiente id donde poner
-// el foco. Si ese id es "submit" se envia el formulario
-function saltar(e,id)
-{
-	// Obtenemos la tecla pulsada
-	(e.keyCode)?k=e.keyCode:k=e.which;
- 
-	// Si la tecla pulsada es enter (codigo ascii 13)
-	if(k==13)
-	{
-		// Si la variable id contiene "submit" enviamos el formulario
-		if(id=="submit")
-		{
-			document.forms[0].submit();
-		}else{
-			// nos posicionamos en el siguiente input
-			document.getElementById(id).focus();
-		}
-	}
-}
-</script>
